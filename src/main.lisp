@@ -83,8 +83,8 @@
   (lgame.render:present)
 
   (livesupport:update-repl-link)
-  (multiple-value-bind (duration delay)(lgame.time:clock-tick 60)
-    (update-fps *fps-display* (+ duration delay))))
+  (multiple-value-bind (duration delay) (lgame.time:clock-tick 60)
+    (update-fps *fps-display* (+ (* 1 duration) (* 1 delay)))))
 
 (eval-when (:execute)
   (main))
