@@ -6,5 +6,6 @@
                "ironclad")
   :components ((:module "src/"
                 :serial t
-                :components ((:file "sprites")
+                :components ((:file "package")
+                             (:file "sprites")
                              (:file "main")))))
